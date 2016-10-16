@@ -6,9 +6,7 @@ namespace WAHtton
     {
         public App()
         {
-            InitializeComponent();
-
-            MainPage = new WAHttonPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
