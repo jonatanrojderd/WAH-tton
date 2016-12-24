@@ -1,18 +1,11 @@
-﻿using System;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using Android.Media;
 
 namespace WAHtton.Droid
 {
-    [Activity(Label = "WAHtton.Droid", Icon = "@drawable/icon", 
-              Theme = "@style/MyTheme", MainLauncher = true, 
+    [Activity(Label = "WAH-tton!", Icon = "@drawable/icon",
+              Theme = "@style/MyTheme", MainLauncher = true,
               ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {

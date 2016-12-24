@@ -1,5 +1,4 @@
-﻿using System;
-namespace WAHtton
+﻿namespace WAHtton
 {
     public interface IButtonClick
     {

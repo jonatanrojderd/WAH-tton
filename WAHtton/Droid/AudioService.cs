@@ -1,5 +1,4 @@
 ﻿using Android.App;
-using Android.OS;
 using Android.Media;
 using WAHtton.Droid;
 using Xamarin.Forms;
@@ -9,17 +8,12 @@ using Android.Util;
 namespace WAHtton.Droid
 {
     [Activity(MainLauncher = true)]
-    public class AudioService : Activity, IButtonClick
+    public class AudioService : IButtonClick
     {
         private MediaPlayer _mediaPlayer;
 
         public AudioService()
         {
-        }
-
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
         }
 
         public void PlaySound()
@@ -41,6 +35,15 @@ namespace WAHtton.Droid
             PlaySound();
 
             Log.WriteLine(LogPriority.Debug, "WAH", "Pressed from Andoid device, WAH!");
+        }
+
+        void Clips()
+        {
+            var clips = new System.Collections.Generic.Dictionary<int, string>
+            {
+                { Resource.Raw.Fall2, "fall2" }
+            };
+
         }
     }
 }
